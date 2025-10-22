@@ -74,7 +74,7 @@ const Contact = () => {
         <div className="contact-container">
           <h3 className="head-text">Let's talk</h3>
           <p className="text-lg text-white-600 mt-3">
-            Whether you’re building internal tools, automations, or dashboards, I’m here to help.
+            Whether you're building internal tools, automations, or dashboards, I'm here to help.
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
@@ -87,12 +87,12 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., John Doe"
+                placeholder="e.g., John Doe"
               />
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Email address</span>
+              <span className="field-label">Email Address</span>
               <input
                 type="email"
                 name="email"
@@ -100,12 +100,12 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., johndoe@gmail.com"
+                placeholder="e.g., johndoe@gmail.com"
               />
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Your message</span>
+              <span className="field-label">Your Message</span>
               <textarea
                 name="message"
                 value={form.message}

@@ -7,11 +7,13 @@ import { Center, OrbitControls } from '@react-three/drei';
 import { myProjects } from '../constants/index.js';
 import CanvasLoader from '../components/Loading.jsx';
 import DemoComputer from '../components/DemoComputer.jsx';
+import ProjectDetail from '../components/ProjectDetail.jsx';
 
 const projectCount = myProjects.length;
 
 const Projects = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
+  const [isDetailOpen, setIsDetailOpen] = useState(false);
 
   const handleNavigation = (direction) => {
     setSelectedProjectIndex((prevIndex) => {
@@ -31,7 +33,7 @@ const Projects = () => {
 
   return (
     <section className="c-space my-20">
-      <p className="head-text">Selected Projects</p>
+      <p className="head-text">Types of Applications I’ve Delivered</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
@@ -51,22 +53,12 @@ const Projects = () => {
           </div>
 
           <div className="flex items-center justify-between flex-wrap gap-5">
-            <div className="flex items-center gap-3">
-              {currentProject.tags.map((tag, index) => (
-                <div key={index} className="tech-logo">
-                  <img src={tag.path} alt={tag.name} />
-                </div>
-              ))}
-            </div>
-
-            <a
-              className="flex items-center gap-2 cursor-pointer text-white-600"
-              href={currentProject.href}
-              target="_blank"
-              rel="noreferrer">
-              <p>Check Live Site</p>
-              <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
-            </a>
+            <button
+              className="text-white-600 hover:text-white transition underline"
+              onClick={() => setIsDetailOpen(true)}
+            >
+              View summary
+            </button>
           </div>
 
           <div className="flex justify-between items-center mt-7">
@@ -95,6 +87,14 @@ const Projects = () => {
           </Canvas>
         </div>
       </div>
+      {isDetailOpen && (
+        <ProjectDetail
+          project={currentProject}
+          onClose={() => setIsDetailOpen(false)}
+          onPrev={() => handleNavigation('previous')}
+          onNext={() => handleNavigation('next')}
+        />
+      )}
     </section>
   );
 };

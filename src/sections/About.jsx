@@ -23,9 +23,9 @@ const About = () => {
             <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Hi, I’m Fauzi Ramdani</p>
+              <p className="grid-headtext">Hi, I'm Fauzi Ramdani</p>
               <p className="grid-subtext">
-                With 3+ years of experience, I build internal systems, automation tools, chatbots, and dashboards that improve operations and productivity.
+                Full-stack developer with 3+ years of experience in web applications, mobile development, and IoT systems. I specialize in building scalable solutions from embedded systems to enterprise dashboards.
               </p>
             </div>
           </div>
@@ -36,9 +36,9 @@ const About = () => {
             <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Tech Stack</p>
+              <p className="grid-headtext">Technical Expertise</p>
               <p className="grid-subtext">
-                Languages: JavaScript, TypeScript, Python, PHP. Frameworks: React, Node.js, Express, Laravel. Databases: MySQL, PostgreSQL, MongoDB. Tools: WebSocket, REST API, RFID, WhatsApp API, Docker.
+                Frontend: React, Angular, Vue.js. Mobile: Flutter, Cordova. Backend: Node.js, Express, Laravel, Python. IoT: Arduino, ESP32, Raspberry Pi, MQTT. Databases: MySQL, PostgreSQL, MongoDB. DevOps: Docker, REST APIs, WebSocket.
               </p>
             </div>
           </div>
@@ -60,8 +60,8 @@ const About = () => {
               />
             </div>
             <div>
-              <p className="grid-headtext">Flexible with time zones & locations</p>
-              <p className="grid-subtext">I&apos;m based in West Java, Indonesia and open to remote work worldwide.</p>
+              <p className="grid-headtext">Global Remote Collaboration</p>
+              <p className="grid-subtext">Based in West Java, Indonesia — delivering enterprise solutions worldwide with timezone flexibility.</p>
               <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
             </div>
           </div>
@@ -72,10 +72,9 @@ const About = () => {
             <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">My Passion for Coding</p>
+              <p className="grid-headtext">Innovation Through Technology</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my
-                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+                Passionate about creating end-to-end solutions that bridge the digital and physical worlds. From IoT sensor networks to responsive web applications, I transform complex requirements into elegant, scalable systems.
               </p>
             </div>
           </div>
