@@ -38,7 +38,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Technical Expertise</p>
               <p className="grid-subtext">
-                Frontend: React, Angular, Vue.js. Mobile: Flutter, Cordova. Backend: Node.js, Express, Laravel, Python. IoT: Arduino, ESP32, Raspberry Pi, MQTT. Databases: MySQL, PostgreSQL, MongoDB. DevOps: Docker, REST APIs, WebSocket.
+                Proficient in designing and developing scalable web and mobile applications using modern frontend frameworks, cross-platform mobile tools, and robust backend architectures with integrated CI/CD workflows.
               </p>
             </div>
           </div>
